@@ -1,0 +1,33 @@
+<!DOCTYPE html >
+<html ng-app="myApp">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+<body>
+
+<a href="#/!">main</a>
+<p><a href="#!some">some</a></p>
+
+<p>Click on the links to change the content.</p>
+<div style="height: 500px; background-color: blue;">
+  	<div ng-view>
+  		
+  	</div>
+</div>
+
+<p>Use the "otherwise" method to define what to display when none of the links are clicked.</p>
+<script>
+var app = angular.module("myApp", ["ngRoute"]);
+app.config(function($routeProvider) {
+    $routeProvider
+    .when("/", {
+        templateUrl : "main.html"
+    })
+    .when("/some",{
+    	templateUrl : "some.html"
+    })  
+});
+</script>
+
+</body>
+</html>

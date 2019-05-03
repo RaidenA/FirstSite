@@ -1,4 +1,4 @@
-.row{
+.head{
 	margin:0 auto;
 	width: 99%;
 	background-color: #eba51f;
@@ -6,11 +6,10 @@
 	border-top-left-radius: 150px;
 }
 
-
 body{
 	background-color: #f1e34f;
 }
-h1{
+.title{
 	float: left;
 	padding-left: 10px;
 	font-size: 120px;
@@ -52,15 +51,22 @@ h1{
 span{
 	font-size: 25px;
 }
-a{
+.navigation{
 	color: white;
 }
-a:hover{
+.navigation:hover{
 	color: white;
 }
-a:active{
+.navigation:active{
 	color: white;
 }
-A:link {
+.navigation:link {
     text-decoration: none;
  }
+.navBar{
+	background-color: #f5e969;
+
+}
+.safe:hover{
+	color: #efaa31;
+}
